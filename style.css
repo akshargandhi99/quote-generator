@@ -36,7 +36,11 @@ body {
 }
 
 .fa-quote-left {
-    font-size: 4rem;
+    font-size: 2.5rem;
+}
+
+.fa-quote-right {
+    font-size: 2.5rem;
 }
 
 .quote-author {
@@ -104,6 +108,6 @@ button:active {
     }
 
     .quote-text {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 } 
