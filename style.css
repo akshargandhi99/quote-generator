@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.07' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: black;
+    font-family:'Noto Sans', sans-serif; /* Fallback sans-serif */
+    font-weight: 700; /* Bold */
+    text-align: center;
+    display: flex;
+    align-items: center; /* Align Vertically */
+    justify-content: center; /* Align Horizontally */
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px; /*Top and Bottom, then Left and Right*/
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0 ,0, 0, 0.2);
+}
+
+.quote-text {
+    font-size: 2rem;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 2rem;
+}
+
+.fa-quote-right {
+    font-size: 2rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121 ,121, 121, 0.65);
+}
+
+button:hover {
+    filter: brightness(150%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem); /*Not moving on horizontal axis, Lowering by 0.3 rem on vertical axis*/
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+/* Loader */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #333;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Media Query Tablet or smaller */
+@media screen and (max-width: 1000px) { /*For Screens having less than 100px width*/
+    .quote-container {
+        margin: auto 10px;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    }
+} 
