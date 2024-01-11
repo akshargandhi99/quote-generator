@@ -55,7 +55,7 @@ async function getQuotes() {
   showLoadingSpinner();
   const apiUrl = "https://type.fit/api/quotes";
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl, { method: "GET", mode: "cors" });
     apiQuotes = await response.json();
     newQuote();
   } catch (error) {}
